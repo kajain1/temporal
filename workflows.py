@@ -81,7 +81,7 @@ class ProcessCartWorkflow:
                 start_to_close_timeout=timedelta(seconds=5),
                 retry_policy=api_default_retry_policy,
             )
-        ## I have mocked a case to come to the refund flow just to orchestrate the behavior
+        ## I have mocked a case to come to the refund flow just to show the orchestrate behavior
         except Exception:
             refund_payment_output = await workflow.execute_activity_method(
                 TxnProcessingActivities.refund_payment_activity,
