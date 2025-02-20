@@ -14,7 +14,7 @@ from temporalio.client import Client, WorkflowFailureError
 from temporalio.exceptions import ApplicationError
 from shared import ORDER_PROCESSING_TASK_QUEUE_NAME, CartInfo
 
-## My attepmt to submit the card payload via postman instead of running the run_workflow
+## My attepmt to submit the cart payload via postman instead of running the run_workflow
 ## More work needs to be done here because the exceptions returned from the workflow client are not the actual application exceptions
 ## Need to catch application exceptions and convert those into the valid HTTP codes and response message
 ## This is working for happy path but not for exception scenarios
